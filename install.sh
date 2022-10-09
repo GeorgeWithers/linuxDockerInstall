@@ -2,6 +2,11 @@ apt -y update
 apt -y upgrade
 apt -y full_upgrade
 apt -y autoremove
+apt -y install ubuntu-minimal ubuntu-standard ubuntu-desktop
+apt -y update
+apt -y upgrade
+apt -y full_upgrade
+apt -y autoremove
 apt -y install ca-certificates gnupg lsb-release
 mkdir -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
